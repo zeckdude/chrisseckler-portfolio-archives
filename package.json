@@ -1,0 +1,13 @@
+{
+  "name": "chrisseckler-portfolio-archives",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "freeze:2024": "node scripts/freeze-2024.mjs"
+  },
+  "devDependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5",
+    "nunjucks": "^3.2.4"
+  }
+}

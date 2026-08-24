@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
+    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+    <meta charset="utf-8" />
+    <title>Portfolio of Chris Seckler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="manifest"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/manifest.json"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/favicon.ico"
+    />
+    <meta name="apple-mobile-web-app-title" content="Chris Seckler Portfolio" />
+    <meta name="application-name" content="Chris Seckler Portfolio" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta
+      name="msapplication-config"
+      content="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ==============================================
+		CSS
+		=============================================== -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- ==============================================
+		Fonts
+		=============================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- ==============================================
+		JS
+		=============================================== -->
+
+    <!--[if lt IE 9]>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/js/libs/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nunjucks/3.2.3/nunjucks.min.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target="#main-nav" data-offset="400">
+    <div class="page-container">
+      <!-- MAIN NAV -->
+      <div id="main-nav" class="navbar navbar-fixed-top ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <!-- LOGO (for small screens) -->
+            <a class="navbar-brand visible-xs scrollto" href="/"> Chris Seckler </a>
+          </div>
+
+          <div id="site-nav" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li id="logo">
+                <a href="#home" 
+                  class="scrollto">
+                    <h1>Chris Seckler</h1>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+              
+                <li>
+                  <a href="/#services" class=" scrollto "> Why choose me </a>
+                </li>
+              
+                <li>
+                  <a href="/#about" class=" scrollto "> Who am I </a>
+                </li>
+              
+                <li>
+                  <a href="/#skills" class=" scrollto "> Skills </a>
+                </li>
+              
+                <li>
+                  <a href="/#portfolio" class=" scrollto "> Projects </a>
+                </li>
+              
+                <li>
+                  <a href="/#experience" class=" scrollto "> Experience </a>
+                </li>
+              
+                <li>
+                  <a href="/links" class=""> Links </a>
+                </li>
+              
+                <li>
+                  <a href="/#contact" class=" scrollto "> Get in touch </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        
+  <!-- HEADER -->
+<header id="home" class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-col">
+        <h1>Hi, I am Chris Seckler</h1>
+        <p>a front-end developer with back-end skills</p>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="imac-frame">
+          <img
+            class="img-responsive img-center"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/imac.png"
+            alt=""
+          />
+          <div class="imac-screen flexslider">
+            <ul class="slides">
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/450x270/1.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- WHY CHOOSE ME -->
+<section id="services" class="white-bg padding-top-bottom">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">Why choose me?</h1>
+      <p>
+        I am a detail-oriented individual who loves to create a quality product. <br />
+        Web development is a welcomed challenge that I look forward to every day.
+      </p>
+    </header>
+
+    <div class="row services">
+      
+        <div class="col-md-3 col-sm-6 item scrollimation fade-up ">
+          <div class="icon">
+            <img
+              class="img-responsive img-center"
+              src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/service1.png"
+              alt=""
+            />
+          </div>
+
+          <h2>Mobile Responsive</h2>
+          <p>I create websites that are not only HTML5 and CSS3 compliant, but also look great on the multitude of devices on the market today.</p>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 item scrollimation fade-up d1">
+          <div class="icon">
+            <img
+              class="img-responsive img-center"
+              src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/service2.png"
+              alt=""
+            />
+          </div>
+
+          <h2>Versatile</h2>
+          <p>My core skill set lies in the front-end development of websites, but I am also experienced in PHP and MySQL databases.</p>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+          <div class="icon">
+            <img
+              class="img-responsive img-center"
+              src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/service3.png"
+              alt=""
+            />
+          </div>
+
+          <h2>Interactive</h2>
+          <p>While web development is my bread and butter, I am also familiar in other areas, including graphic design and sound &amp; video editing.</p>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+          <div class="icon">
+            <img
+              class="img-responsive img-center"
+              src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/service4.png"
+              alt=""
+            />
+          </div>
+
+          <h2>Adaptive</h2>
+          <p>Having served 8 years in the military and worked 4 years in an agency environment, I excel in team environments.</p>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- FEATURED PROJECT -->
+<section id="feat-project" class="gray-bg padding-top">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">Featured Project</h1>
+      <p>
+        Custom Analytics Platform
+        <br />
+        A custom-built tracking solution for My Hotel Wedding
+      </p>
+    </header>
+
+    <div class="scrollimation fade-up">
+      <img
+        class="img-responsive img-center"
+        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/chrome-top.png"
+        alt=""
+      />
+
+      <div class="img-wrapper">
+        <img
+          class="img-responsive img-center"
+          src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/800x500/1.jpg"
+          alt=""
+        />
+
+        <p class="text-center on-hover">
+          <a id="feat-more-info-btn" class="btn btn-pill icon-right" href="#myhotelwedding-analytics">
+            See Project<i class="fa fa-arrow-right"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ABOUT -->
+<section id="about" class="dark-bg light-typo padding-top-bottom">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">Who Am I?</h1>
+    </header>
+
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="row scrollimation fade-in">
+          <img
+            class="img-responsive img-center img-circle scrollimation fade-left"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/about.jpg"
+            alt=""
+          />
+
+          <div class="col-sm-6">
+            <p>
+              <span class="about-header">This is who I am:</span>
+              My name is Chris Seckler.
+            </p>
+            <p>
+              I'm a graduate from the Art Institute of California - Orange County with a Bachelor's of Science in
+              Web Design and Interactive Media.
+            </p>
+            <p>I was raised bilingually, reading and writing English and German.</p>
+            <p>I have traveled extensively to many parts of the world and enjoy interacting with others.</p>
+          </div>
+
+          <div class="col-sm-6">
+            <p>
+              <span id="about-header-right" class="about-header"> This is what you should know: </span>
+              Coding is always on my mind.
+            </p>
+            <p>
+              I'm a passionate developer, with 6 years of experience, who truly enjoys working with web technologies
+              and creating helpful tools for companies online.
+            </p>
+            <p>
+              On the business side, I put emphasis on excellence and approach every project with the utmost
+              professionalism.
+            </p>
+            <p>On the personal side I am lighthearted, energetic and positive, and enjoy every day of my life!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="links-mention">
+      <span>Check out my favorite resources and websites <a href="/links">here</a>.</span>
+    </div>
+
+    <p class="text-center">
+      <a class="btn btn-pill scrollto white icon-left" href="#contact">
+        <i class="fa fa-arrow-down"></i>Get in Touch
+      </a>
+    </p>
+  </div>
+</section>
+  <!-- SKILLS -->
+<section id="skills" class="white-bg">
+  <div class="container">
+    <div class="row skills">
+      <h1 class="text-center scrollimation fade-in">I Got the Skills</h1>
+
+      <div class="col-sm-6 col-md-3 text-center">
+        <span class="chart" data-percent="80">
+          <span class="percent">90</span>
+        </span>
+        <h2 class="text-center">HTML / CSS</h2>
+      </div>
+      <div class="col-sm-6 col-md-3 text-center">
+        <span class="chart" data-percent="70">
+          <span class="percent">70</span>
+        </span>
+        <h2 class="text-center">JavaScript / jQuery</h2>
+      </div>
+      <div class="col-sm-6 col-md-3 text-center">
+        <span class="chart" data-percent="70">
+          <span class="percent">70</span>
+        </span>
+        <h2 class="text-center">PHP / MySQL</h2>
+      </div>
+      <div class="col-sm-6 col-md-3 text-center">
+        <span class="chart" data-percent="110">
+          <span class="percent">110</span>
+        </span>
+        <h2 class="text-center">Enthusiasm / Determination</h2>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- PORTFOLIO -->
+<section id="portfolio" class="gray-bg padding-top-bottom">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">My Projects</h1>
+      <p>
+        Please check out my past creations below.
+        <br />
+        I hate to use the word "work", because developing for the web is just that much fun for me.
+      </p>
+    </header>
+
+    <div id="filter-works">
+      <ul>
+        <li class="active scrollimation fade-right d1">
+          <a href="#" data-filter="*"> All </a>
+        </li>
+
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-javaScript"> JavaScript </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-jquery"> jQuery </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-php"> PHP </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-mysql"> MySQL </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-laravel"> Laravel </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-ajax"> AJAX </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-mobile"> Mobile Responsive </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-mvc"> MVC </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-html"> HTML </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-css"> CSS </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-smarty"> Smarty </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-facebook"> Facebook Integration </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-wordpress"> WordPress </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-git"> Git </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-grunt"> Grunt </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-cms"> Custom CMS </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-youtube"> YouTube Integration </a>
+          </li>
+        
+          <li class="scrollimation">
+            <a href="#" data-filter=".filter-video"> Videos </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="container masonry-wrapper scrollimation fade-in">
+    <div id="projects-container">
+
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-javaScript filter-jquery filter-php filter-mysql filter-laravel filter-ajax filter-mobile filter-mvc"
+          data-project="myhotelwedding-analytics"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Custom Analytics Platform</h2>
+            <p>My Hotel Wedding</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="JavaScript, jQuery, PHP, MySQL, Laravel, AJAX, Mobile Responsive, MVC, "
+            data-date="07/15"
+            data-client="My Hotel Wedding"
+            data-role="Front &amp; Back End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding-analytics/750x430/5.jpg"
+          >
+            
+              <p>A tracking and analytics platform customized to the needs of one my clients, My Hotel Wedding.</p>
+            
+              <p>My Hotel Wedding approached me about figuring out a way to track unique actions their users take on their site and for ways to display that data in meaningful reports and concise data visualization methods.</p>
+            
+              <p>The custom analytics platform I developed makes use of PHP and JavaScript to collect the data based on user&#39;s actions, such as page loads, button clicks, and other customized actions. The information is then seamlessly sent to a MySQL database using AJAX to record a wealth of information along with each entry.</p>
+            
+              <p>The data can be accessed in the mobile-responsive admin dashboard panels on any device available. They are filled with beautiful data visualizations displaying trends and other site information, so that administrators can easily determine how well the site is operating, based on a variety of filters they determine.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-javaScript filter-jquery filter-html filter-css filter-mobile filter-mvc"
+          data-project="fox-international-portal"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Fox International Portal</h2>
+            <p>Trailer Park Inc.</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="JavaScript, jQuery, HTML, CSS, Mobile Responsive, MVC, "
+            data-date="07/14"
+            data-client="Trailer Park Inc."
+            data-role="Front End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/6.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/fox_portal/750x430/7.jpg"
+          >
+            
+              <p>A website created for Fox Entertainment Group to display their large library of movie titles and to give viewers an easy way to buy the titles.</p>
+            
+              <p>Built on top of the Yii PHP framework, the site uses a custom CMS for Fox to change anything on the site for different countries. It is mobile responsive and uses JavaScript to improve the viewing experience.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-jquery filter-mobile filter-smarty filter-mvc"
+          data-project="automd-mobile-responsive-redesign"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">AutoMD Mobile Responsive Re-Design</h2>
+            <p>AutoMD</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, jQuery, Mobile Responsive, Smarty, MVC, "
+            data-date="10/15"
+            data-client="AutoMD"
+            data-role="Front End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/6.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/7.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/8.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/9.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/10.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/11.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/12.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/13.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/automd/750x430/14.jpg"
+          >
+            
+              <p>A re-design of an outdated site using mobile-responsive strategies.</p>
+            
+              <p>AutoMD contracted me to convert existing, outdated pages into new designs employing mobile responsive strategies. As a front-end developer, it was my role to ensure that pages were pixel-perfect recreations of the photoshop comps provided to me, while knowing when to use groundbreaking CSS3 and HTML5, as well as being aware of when to use fallbacks for older browsers.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-jquery filter-php filter-mysql filter-ajax"
+          data-project="college-rental-listings"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">College Rental Listings Website</h2>
+            <p>College Rental Listings</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, jQuery, PHP, MySQL, AJAX, "
+            data-date="08/13"
+            data-client="College Rental Listings"
+            data-role="Chief Technical Officer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/6.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/7.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/8.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/9.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/10.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/11.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/12.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/13.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/crl/750x430/14.jpg"
+          >
+            
+              <p>A startup I co-founded that provides homeowners and property managers a way to advertise homes for rent to college students.</p>
+            
+              <p>Built on the idea that finding off-campus housing shouldn&#39;t be a huge amount of homework, College Rental Listings sought to improve the listing process for homeowners as well as the search process for students through several easy-to-follow steps of creating a profile and being able to communicate with each other effortlessly.</p>
+            
+              <p>Apart from the house/apartment listings, it also includes other features, such as room and roommate listings for students, options to filter and search through the returned listings for each category, a notification system for when listings are posted, Google Maps integration, and an admin dashboard for university administrators to moderate and edit listings, as well as have a quick overview of all the students and listers registered on the site.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-jquery filter-facebook"
+          data-project="tnt-major-crimes-facebook-app"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">TNT&#39;s Major Crimes Facebook App</h2>
+            <p>Trailer Park Inc.</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, jQuery, Facebook Integration, "
+            data-date="02/13"
+            data-client="Trailer Park Inc."
+            data-role="Front End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/6.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/7.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/8.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/9.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/10.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/major_crimes/750x430/11.jpg"
+          >
+            
+              <p>While employed at Trailer Park Inc., we were approached by TNT to create a website integrated into Facebook by means of a Facebook app that provided information relating to the new season, gave a deeper understanding of the new characters, allowed for viewing of clips from the show via YouTube embedded videos, as well as an interactive module where users could upload photos and the system would determine if they&#39;re guilty or not.</p>
+            
+              <p>Working on a team of 3, my role as the front-end developer was to code layouts, create slick animations, and integrate Facebook comments for photo/video galleries.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-jquery filter-php"
+          data-project="pro-print-services"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/pro_print/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Pro Print &amp; Services Website</h2>
+            <p>Pro Print &amp; Services</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, jQuery, PHP, "
+            data-date="10/10"
+            data-client="Pro Print &amp; Services"
+            data-role="Front End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/pro_print/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/pro_print/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/pro_print/750x430/3.jpg"
+          >
+            
+              <p>The Pro Print website is an informational site for a printing company that explains their services, as well as offers users an opportunity to contact them or request quotes.</p>
+            
+              <p>Includes an illustrative office-desk look with a tab-based interface that mimics the feel of manila folders. Also, makes use of a lightbox in a creative way.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css"
+          data-project="warner-bros-cartoon-universe"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/cartoon_universe/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Warner Bros. Cartoon Universe Website</h2>
+            <p>Trailer Park Inc.</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, "
+            data-date="08/12"
+            data-client="Trailer Park Inc."
+            data-role="Front End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/cartoon_universe/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/cartoon_universe/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/cartoon_universe/750x430/3.jpg"
+          >
+            
+              <p>While employed at Trailer Park Inc., I was tasked with developing the re-design for the Cartoon Universe, a Unity online game. The website served as a portal to find more information about the game, rules, and means to receive customer support.</p>
+            
+              <p>Working on a team of 3, we worked collaboratively to finish development by set deadlines. As the front-end developer, I made sure that the design was implemented pixel perfect and to the liking of the client, Warner Bros.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-javaScript filter-youtube filter-video"
+          data-project="warner-bros-300-movie-website"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Warner Bros. 300: The Movie Website</h2>
+            <p>Trailer Park Inc.</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, JavaScript, YouTube Integration, Videos, "
+            data-date="08/13"
+            data-client="Trailer Park Inc."
+            data-role="Front End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/300_movie/750x430/5.jpg"
+          >
+            
+              <p>Warner Bros hired my team of 3 at Trailer Park Inc. to create a teaser site for their upcoming film &quot;300: The Rise of an Empire&quot;. It includes videos, plot synopsis, movie poster downloads, and character profiles.</p>
+            
+              <p>Built with mobile responsiveness in mind, it includes fullscreen YouTube video integration and social sharing features.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-php filter-mysql filter-javaScript filter-jquery"
+          data-project="vacation-showcase-website"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Vacation Showcase Website</h2>
+            <p>Peninsula Travel Experts</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, PHP, MySQL, JavaScript, jQuery, "
+            data-date="02/11"
+            data-client="Peninsula Travel Experts"
+            data-role="Front &amp; Back End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/vacation_showcase/750x430/6.jpg"
+          >
+            
+              <p>Peninsula Travel Experts are a network of travel agents and vendors who organize an annual trade show promoting their various services. They were in need of a website with which they could provide information to the next upcoming annual trade show named &quot;Vacation Showcase&quot;.</p>
+            
+              <p>I designed the site in a playful, fun, vacation-like feel and made the site content customizable from top to bottom. It includes a custom Content Management System to allow for easy website updates by the client as well as a built-in Mailing List Manager to send out newsletters to large groups of recipients at the click of a button.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-jquery filter-laravel filter-mvc filter-wordpress filter-git filter-grunt"
+          data-project="my-hotel-wedding-website"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">My Hotel Wedding Website</h2>
+            <p>My Hotel Wedding</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, jQuery, Laravel, MVC, WordPress, Git, Grunt, "
+            data-date="08/15"
+            data-client="My Hotel Wedding"
+            data-role="Front &amp; Back End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/myhotelwedding/750x430/6.jpg"
+          >
+            
+              <p>My Hotel Wedding is a service that originated with a successful blog (30,000+ pageviews a month) and branched out into several other areas, primarily as a resource for hotels to list their venues and to connect brides/grooms with them. In addition, the site also includes interactive quizzes, budgeting tools, helpful PDFs, an e-course for planning your wedding, and more.</p>
+            
+              <p>As the lead developer, I am responsible for updating outdated WordPress code, adding new pages on the Laravel PHP MVC framework, and consulting on many other web-related issues. Some things I have created are modular, interactive JavaScript quizzes that track user responses for data collection, Google Maps integration on user locations, and a hotel rating system.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-php filter-mysql filter-javaScript"
+          data-project="photography-auction-website"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/photo_auction/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Photography Auction Website</h2>
+            <p>Freelance</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, PHP, MySQL, JavaScript, "
+            data-date="08/09"
+            data-client="Freelance"
+            data-role="Front &amp; Back End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/photo_auction/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/photo_auction/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/photo_auction/750x430/3.jpg"
+          >
+            
+              <p>As a requirement for my final bachelor&#39;s degree class, I decided to create a conceptual silent photo auction. The resulting site is a complete site that is ready to be deployed as is.</p>
+            
+              <p>It includes sorting and filtering, multi-user accounts, and automated email features that notify the winner of an auction. Using PHP and MySQL, I created a custom Content Management System so the administrator can easily add, edit, delete, or activate auction items.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+        <!-- SINGLE PROJECT ITEM -->
+        <article
+          class="project-item  filter-html filter-css filter-php filter-mysql filter-javaScript filter-jquery filter-cms"
+          data-project="amat-business-card-ordering"
+        >
+          <img
+            class="img-responsive project-image"
+            src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/320x210/1.jpg"
+            alt=""
+          />
+
+          <div class="hover-mask">
+            <h2 class="project-title">Applied Materials Business Card Ordering Center Website</h2>
+            <p>Pro Print &amp; Services</p>
+          </div>
+
+          <!-- Project Preview HTML -->
+
+          <div
+            class="sr-only project-description"
+            data-category="HTML, CSS, PHP, MySQL, JavaScript, jQuery, Custom CMS, "
+            data-date="06/10"
+            data-client="Pro Print &amp; Services"
+            data-role="Front &amp; Back End Developer"
+            data-images="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/750x430/1.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/750x430/2.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/750x430/3.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/750x430/4.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/750x430/5.jpg, https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/projects/amatorders/750x430/6.jpg"
+          >
+            
+              <p>My client, Pro Print &amp; Services, required a system to process and track a large amount of daily business card orders. It had to streamline their workflow, while minimizing the amount of manual work hours required to order cards as well as provide an easy-to-follow administrative tracking system.</p>
+            
+              <p>I devised a solution in which all orders are entered on a website, and a dynamically created PDF proof of the business card is generated. At this point, the proof is automatically sent to the manager for approval. After the manager approves, the PDF can be combined with dynamically generated PDFs of other completed cards to be run off the printing press. The new system I developed substantially sped up the process and saved Pro Print &amp; Services significant time and money.</p>
+            
+              <p>It is a multi-user site and allows for a translating service to upload foreign language characters that can be automatically added to the PDF proofs. It also includes a custom Content Management System where the printing company employees can track all their orders, complete with a detailed order history, searching and sorting, and a status ticker for a quick overview of all past and current orders.</p>
+            
+          </div>
+        </article>
+        <!-- END PROJECT ITEM -->
+      
+    </div>
+  </div>
+
+  <!-- PROJECT PREVIEW MODAL (Do not alter this markup) -->
+  <div id="project-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            <h1 id="hdr-title" class="text-center"></h1>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="image-wrapper">
+                  <img
+                    class="img-responsive"
+                    src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/chrome.png"
+                    alt=""
+                  />
+                  <div class="loader"></div>
+                  <div class="screen"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div id="project-sidebar" class="col-md-3">
+                <h2 id="sdbr-title"></h2>
+                <p id="sdbr-category"></p>
+                <p id="sdbr-date"></p>
+                <p id="sdbr-client"></p>
+                <p id="sdbr-role"></p>
+                <p id="sdbr-link">
+                  <a href="#link" target="_blank" class="dont-break-out"></a>
+                </p>
+                <p id="sdbr-descr"></p>
+              </div>
+              <div id="project-content" class="col-md-8 col-md-offset-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- EXPERIENCE -->
+<section id="experience" class="color-bg light-typo padding-top-bottom">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">My Experience</h1>
+      <p>In invite you to take a closer look at my qualifications.</p>
+    </header>
+
+    <div class="experience-container">
+      <div class="ex-hightlight">
+        <ul class="clearfix">
+          <li class="yrs-ex outline-outward">
+            <span class="numbers-rotate animated-number" data-value="8" data-animate-duration="1200"> 8 </span>
+          </li>
+          <li class="ex-inro">
+            <div class="ex-details">
+              <h2>Years Experience in the web development field</h2>
+              <p>
+                I have worked in several environments in the past, including the military, an agency, several
+                startups, and small companies. My experience shows that I am a great addition to any team.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="job-list">
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Dec 2015</span>
+                <span>to</span>
+                <span class="job-to-date">Present</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/chromeriver_logo2.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-ribbon">
+                      <span> <i class="fa fa-star"></i> Current Job </span>
+                    </div>
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">
+                        Chrome River Technologies
+                        <span>Software Engineer</span>
+                      </h3>
+                      <ul>
+                        <li>
+                          Interface via AJAX with REST API endpoints to architect front-end of financial web
+                          application
+                        </li>
+                        <li>Develop modular views using functional JavaScript within an agile work environment</li>
+                        <li>
+                          Strategize with Product Managers & Back-end engineers to solve complex bugs & stories
+                        </li>
+                        <li>Heavy daily debugging in large-scale Backbone.js app using Chrome Developer Tools</li>
+                        <li>Communicate and collaborate with UI designers to create pixel perfect templates</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Nov 2014</span>
+                <span>to</span>
+                <span class="job-to-date">Jan 2017</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/mhw_logo.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">My Hotel Wedding <span>Lead Developer</span></h3>
+                      <ul>
+                        <li>
+                          Maintained WordPress-ran site and add incremental features at the request of the founder
+                        </li>
+                        <li>
+                          Created a custom analytics system to track user actions and generate reports for
+                          administrators
+                        </li>
+                        <li>Converted the majority of the site to be run on the Laravel PHP MVC framework</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Dec 2011</span>
+                <span>to</span>
+                <span class="job-to-date">Dec 2015</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/crl_logo.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">
+                        College Rental Listings
+                        <span>Co-Founder & Chief Technical Officer</span>
+                      </h3>
+                      <ul>
+                        <li>
+                          Founded a startup that gives property owners a service to advertise homes for rent to
+                          college students.
+                        </li>
+                        <li>
+                          Integral from the first stages until present, overseeing all technical aspects of the
+                          site's production.
+                        </li>
+                        <li>Built entire site using HTML, CSS, JavaScript, and PHP.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Mar 2015</span>
+                <span>to</span>
+                <span class="job-to-date">Oct 2015</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/automd_logo.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">AutoMD <span>Front-End Web Developer</span></h3>
+                      <ul>
+                        <li>
+                          Converted existing, outdated pages into new designs employing mobile responsive strategies
+                        </li>
+                        <li>Managed work responsibilities while communicating with startup team when necessary</li>
+                        <li>
+                          Heavy usage of technologies such as CSS3, jQuery, PHP, and the Smarty templating engine
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Nov 2010</span>
+                <span>to</span>
+                <span class="job-to-date">Oct 2014</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/tp_logo.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">Trailer Park Inc. <span>Web Developer</span></h3>
+                      <ul>
+                        <li>
+                          Used HTML, CSS, and JavaScript to create interactive websites for large entertainment
+                          brands
+                        </li>
+                        <li>Created mobile responsive and HTML5 compliant sites</li>
+                        <li>Worked seamlessly in a large digital department and in teams of up to 8 people</li>
+                        <li>Worked with WordPress, jQuery, and PHP MVC frameworks to create large scale sites</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Mar 2010</span>
+                <span>to</span>
+                <span class="job-to-date">Nov 2012</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/pro_print_logo.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">
+                        Pro Print & Services
+                        <span>Front and Back-end Web Developer</span>
+                      </h3>
+                      <ul>
+                        <li>
+                          Designed and developed an ordering and tracking system utilizing HTML, CSS, jQuery and PHP
+                        </li>
+                        <li>
+                          Reduced company costs by automating printing operations via an ordering and tracking
+                          systems
+                        </li>
+                        <li>
+                          Developed site architecture and functionalities appropriate to clients' needs and
+                          requirements
+                        </li>
+                        <li>Communicated project progress and challenges with manager on a weekly basis</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="job-list-item">
+          <ul class="clearfix">
+            <li>
+              <div class="job-date">
+                <span class="job-from-date">Jul 2002</span>
+                <span>to</span>
+                <span class="job-to-date">Jul 2010</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-description">
+                <div class="job-description-container">
+                  <div class="job-brand">
+                    <div class="job-brand-container">
+                      <img
+                        src="https://s3-us-west-1.amazonaws.com/chris-seckler-portfolio-site/assets/images/resume/logos/color/army_logo.jpg"
+                        alt="brand-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="job-details">
+                    <div class="job-details-container">
+                      <h3 class="job-identy-title">
+                        United States Army Reserve
+                        <span>Team Leader - Sergeant</span>
+                      </h3>
+                      <ul>
+                        <li>Lead and managed 2-12 soldiers in combat and home unit environments</li>
+                        <li>
+                          Supervised and delegated lower enlisted soldiers in order to complete platoon missions
+                        </li>
+                        <li>Conducted and oversaw patrols, convoy operations, and traffic control points</li>
+                        <li>Operation Iraqi Freedom, March 2003 - July 2004</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="timeline-stroke">
+        <span class="storke-finish"></span>
+      </span>
+    </div>
+  </div>
+</section>
+  <!-- CONTACT -->
+<section id="contact" class="dark-bg light-typo padding-top">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">Get in Touch</h1>
+      <p>
+        Please send me a message.
+        <br />
+        I look forward to hearing from you.
+      </p>
+    </header>
+
+    <p class="text-center">
+      <a href="mailto:contact@chrisseckler.com" class="btn btn-pill icon-left send-message">
+        <i class="fa fa-paper-plane"></i>Send Message
+      </a>
+    </p>
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="/js/libs/jquery-1.9.1.min.js">\x3C/script>');
+    </script>
+
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.1.3.min.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/jquery.flexslider.min.js"></script>
+    <script src="/js/jquery.masonry.js"></script>
+    <script src="/js/waypoints.min.js"></script>
+    <script src="/js/jquery.label_better.min.js"></script>
+    <script src="/js/jquery.easypiechart.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/scripts.js"></script>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.links-section .link-image').forEach((img) => {
+          img.addEventListener('touchstart', () => {
+            img.classList.add('colorful');
+          });
+
+          img.addEventListener('touchmove', () => {
+            img.classList.add('colorful');
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $('a.scrollto').on('click', function (e) {
+          e.preventDefault();
+          var target = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(target).offset().top,
+            },
+            800,
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
