@@ -18,14 +18,12 @@ scripts/        Regeneration tools (not deployed)
 
 ## Regenerate the 2024 snapshot
 
-Requires the source repo cloned next to this one (`../chrisseckler-portfolio-site`) with a working `.env` (Notion API key + links database ID).
+Requires the source repo cloned next to this one (`../chrisseckler-portfolio-site`).
 
 ```bash
 npm install
 npm run freeze:2024
 ```
-
-Notion `/links` data is baked into HTML at freeze time. Later Notion edits will not appear on the archive.
 
 ## Deploy to Vercel
 

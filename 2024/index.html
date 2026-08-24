@@ -104,7 +104,7 @@
   <body data-spy="scroll" data-target="#main-nav" data-offset="400">
     <div class="page-container">
       <!-- MAIN NAV -->
-      <div id="main-nav" class="navbar navbar-fixed-top ">
+      <div id="main-nav" class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
@@ -120,8 +120,7 @@
           <div id="site-nav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li id="logo">
-                <a href="#home" 
-                  class="scrollto">
+                <a href="#home" class="scrollto">
                     <h1>Chris Seckler</h1>
                 </a>
               </li>
@@ -146,10 +145,6 @@
               
                 <li>
                   <a href="/#experience" class=" scrollto "> Experience </a>
-                </li>
-              
-                <li>
-                  <a href="/links" class=""> Links </a>
                 </li>
               
                 <li>
@@ -386,10 +381,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div id="links-mention">
-      <span>Check out my favorite resources and websites <a href="/links">here</a>.</span>
     </div>
 
     <p class="text-center">
@@ -1382,18 +1373,6 @@
 
     <!-- Smooth Scrolling Script -->
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.links-section .link-image').forEach((img) => {
-          img.addEventListener('touchstart', () => {
-            img.classList.add('colorful');
-          });
-
-          img.addEventListener('touchmove', () => {
-            img.classList.add('colorful');
-          });
-        });
-      });
-
       $(document).ready(function () {
         $('a.scrollto').on('click', function (e) {
           e.preventDefault();

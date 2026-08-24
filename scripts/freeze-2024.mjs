@@ -2,8 +2,6 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-import { Client } from "@notionhq/client";
-import dotenv from "dotenv";
 import nunjucks from "nunjucks";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -21,23 +19,6 @@ function fixAssetPaths(html) {
       /document\.write\('<script src="js\//g,
       'document.write(\'<script src="/js/',
     );
-}
-
-async function fetchPersonalLinks(notion) {
-  const response = await notion.databases.query({
-    database_id: process.env.LINKS_NOTION_DATABASE_ID,
-    sorts: [{ property: "title", direction: "ascending" }],
-  });
-
-  return response.results
-    .filter((page) => !!page.properties.isActive.checkbox)
-    .map((page) => ({
-      url: page.properties.url.rich_text[0].plain_text,
-      imgSrc: page.properties.imgSrc.rich_text[0].plain_text,
-      title: page.properties.title.title[0].plain_text,
-      description: page.properties.description.rich_text[0].plain_text,
-      imageAlt: page.properties.title.title[0].plain_text,
-    }));
 }
 
 async function copyDirectory(src, dest) {
@@ -59,15 +40,6 @@ async function copyDirectory(src, dest) {
 }
 
 async function main() {
-  const envPath = path.join(SOURCE_DIR, ".env");
-  dotenv.config({ path: envPath });
-
-  if (!process.env.NOTION_API_KEY || !process.env.LINKS_NOTION_DATABASE_ID) {
-    throw new Error(
-      `Missing Notion credentials in ${envPath}. Set NOTION_API_KEY and LINKS_NOTION_DATABASE_ID.`,
-    );
-  }
-
   const constantsModule = await import(
     pathToFileURL(path.join(SOURCE_DIR, "constants.js")).href
   );
@@ -79,9 +51,6 @@ async function main() {
     noCache: true,
   });
 
-  const notion = new Client({ auth: process.env.NOTION_API_KEY });
-  const myLinks = await fetchPersonalLinks(notion);
-
   const homeHtml = nunjucks.render("home.njk", {
     navBarLinks,
     skills,
@@ -89,30 +58,22 @@ async function main() {
     projectCategories: Object.values(projectCategories),
   });
 
-  const linksHtml = nunjucks.render("links.njk", {
-    myLinks,
-    pageName: "Links",
-    navBarLinks,
-  });
-
   await fs.rm(OUT_DIR, { recursive: true, force: true });
-  await fs.mkdir(path.join(OUT_DIR, "links"), { recursive: true });
+  await fs.mkdir(OUT_DIR, { recursive: true });
 
   await fs.writeFile(
     path.join(OUT_DIR, "index.html"),
     fixAssetPaths(homeHtml),
     "utf8",
   );
-  await fs.writeFile(
-    path.join(OUT_DIR, "links/index.html"),
-    fixAssetPaths(linksHtml),
-    "utf8",
-  );
 
-  await copyDirectory(
-    path.join(SOURCE_DIR, "public"),
-    OUT_DIR,
-  );
+  await copyDirectory(path.join(SOURCE_DIR, "public"), OUT_DIR);
+
+  // Link thumbnails were only used by the removed /links page.
+  await fs.rm(path.join(OUT_DIR, "images", "links"), {
+    recursive: true,
+    force: true,
+  });
 
   await fs.writeFile(
     path.join(OUT_DIR, "vercel.json"),
@@ -128,7 +89,7 @@ async function main() {
   );
 
   console.log(`Wrote ${OUT_DIR}`);
-  console.log(`  index.html (${myLinks.length} links baked into /links)`);
+  console.log(`  index.html`);
   console.log(`  Frozen at ${frozenAt}`);
 }
 
